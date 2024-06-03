@@ -7,6 +7,7 @@ class CompanyInfo(BaseModel):
 
     def __init__(self, data = None):
         super().__init__(data)
+        self.PtyCd = data.get("PtyCd")
         self.CompanyName = data.get("CompanyName")
         self.Country = data.get("Country")
         self.Currency = data.get("Currency")

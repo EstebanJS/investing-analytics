@@ -2,7 +2,7 @@ from utils.database import db_instance
 from core.repositories.base_repository import BaseRepository
 from core.models.company_info import CompanyInfo
 
-class   (BaseRepository):
+class CompanyInfoRepository(BaseRepository):
     
     def __init__(self):
         super.__init__(db_instance.get_collection("CompanyInfo"))
